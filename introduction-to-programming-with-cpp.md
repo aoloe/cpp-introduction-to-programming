@@ -130,8 +130,6 @@ This program contains one single function called _main_: the C++ compilers looks
 
 A function is a group of statements that get some arguments, performs a task and returns a result.
 
----
-
 In one of the next chapters, we will learn more about functions.  
 But you might already want to know what about the code you just typed. Here is a very short description of the `int main()` function:
 
@@ -142,6 +140,7 @@ But you might already want to know what about the code you just typed. Here is a
 
 <img src="images/first-main-01.png">
 
+---
 
 In Code::Blocks, you can run the program by clicking on the "Run" button in the toolbar: if you don't have typos in your program, a window will popup:
 
