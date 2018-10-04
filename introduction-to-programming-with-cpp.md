@@ -1,7 +1,9 @@
 # Introduction to Programming with Modern C++
 
 ---
+
 This is an early draft of this tutorial.
+
 ---
 
 You're welcome to give hints and suggest corrections, but take care that most of the chapters are not redacted, yet.
