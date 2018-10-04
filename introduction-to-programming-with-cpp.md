@@ -81,7 +81,11 @@ For this tutorial you can create a new directory, with its `README.md` file. For
 
 <img src="images/microscope.png" width="50">
 
+---
+
 One remark: If you're starting with programming, you're probably not familiar with the version-control system (VCS) commonly in use. We recommend that in parallel to learning C++, you also learn about a VCS like git.
+
+---
 
 If you're using Code::Blocks, you can create your first "Hello World" project (it's a long time habit to call the first project you do in a programming language "Hello World"...) by:
 
@@ -122,9 +126,11 @@ This program contains one single function called _main_: the C++ compilers looks
 
 <img src="images/microscope.png" width="50">
 
-<div style="border:1px solid black;">
-> A function is a group of statements that get some arguments, performs a task and returns a result.
-</div>
+---
+
+A function is a group of statements that get some arguments, performs a task and returns a result.
+
+---
 
 In one of the next chapters, we will learn more about functions.  
 But you might already want to know what about the code you just typed. Here is a very short description of the `int main()` function:
@@ -290,6 +296,7 @@ A very special type of number are booleans values: they can always be `1` or `0`
 
 <img src="images/microscope.png" width="50">
 
+---
 
 ```cpp
 #include <iostream>
@@ -313,6 +320,7 @@ Source: https://stackoverflow.com/a/17926277/5239250
 - The `complex` module defines the `std::complex` data type, used to represent complex numbers.
 - In the `cmath` module contains the mathematical function like `asin`, `sqrt`, and `exp`.
 
+---
 
 
 ### Text
