@@ -1,7 +1,8 @@
 # Introduction to Programming with Modern C++
 
-<div style='border:1px solid black;'>
+---
 This is an early draft of this tutorial.
+---
 
 You're welcome to give hints and suggest corrections, but take care that most of the chapters are not redacted, yet.
 </div>
