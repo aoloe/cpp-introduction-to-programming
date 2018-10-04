@@ -1,6 +1,6 @@
 # Introduction to Programming with Modern C++
 
-<div style="border:1px solid black;">
+<div style='border:1px solid black;'>
 This is an early draft of this tutorial.
 
 You're welcome to give hints and suggest corrections, but take care that most of the chapters are not redacted, yet.
@@ -26,7 +26,7 @@ You cannot fully understand the previous paragraph and even  when you're done wi
   - In the code snippets, we always use the same syntax and style throughout the manual, even if sometimes there are shortcuts that could be handy.
   - There are numerous way of doing the same thing: you will often have to learn a few different ways in order to understand other people's code. But that's outside of the scope for this introductory manual.
 - If somebody more skilled than you tells you to do something differently than what is written in here, just follow her advice. She probably has good reasons.
-- We use a microscope icon for facultative information, mostly a bit more advanced than the current chapter.
+- We use a microscope icon for facultative information, mostly a bit more advanced than the current chapter.  
   <img src="images/microscope.png" width="50">
 - We use a head brain with engine, for important things, things your have to think about.
 
@@ -120,7 +120,7 @@ This program contains one single function called _main_: the C++ compilers looks
 <img src="images/microscope.png" width="50">
 
 <div style="border:1px solid black;">
-A function is a group of statements that get some arguments, performs a task and returns a result.  
+> A function is a group of statements that get some arguments, performs a task and returns a result.
 </div>
 
 In one of the next chapters, we will learn more about functions.  
