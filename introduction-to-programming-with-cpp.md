@@ -83,13 +83,13 @@ For this tutorial you can create a new directory, with its `README.md` file. For
 
 ---
 
-One remark: If you're starting with programming, you're probably not familiar with the version-control system (VCS) commonly in use. We recommend that in parallel to learning C++, you also learn about a VCS like git.
+If you're starting with programming, you're probably not familiar with the version-control systems (VCS) commonly in use. We recommend that in parallel to learning C++, you also learn about a VCS like git.
 
 ---
 
 If you're using Code::Blocks, you can create your first "Hello World" project (it's a long time habit to call the first project you do in a programming language "Hello World"...) by:
 
-- File > New > Project and pick "Console application" as the type for the project.  
+- "File > New > Project" and pick "Console application" as the type for the project.  
   ![](images/codeblocks-new-project-console.png)
 - Choose the C++ language:  
   ![](images/codeblocks-new-project-cpp.png)
@@ -104,7 +104,9 @@ If you're using Code::Blocks, you can create your first "Hello World" project (i
 - In your `Documents/code` directory you should now have a `hello-world` directory with two files:
   - `hello-world-cbp`: the Code::Blocks project file.
   - `main.cpp`: the main file where you will write your first program very soon.
+- With `File > New > Empty file` create the "readme" file, confirm, that you want it to be added to the project, save it as `README.me` and add it to both the release and debug mode.
 
+And now, we get to the bones: finally creating your first lines of code.
 
 ## Your first program
 
@@ -175,7 +177,7 @@ We will not build a real vending machine, just simulate it in your computer.
 
 ## The standard output
 
-When you write a program, you always want it to tell something to the user. Most users expect a graphical user interface, but from a programmer's point of view, the simplest way to do so is by using the standard output:
+When you write a program, you always want it to tell something to the user. Most users expect a graphical user interface, often by creating a file or by filling a database. From a programmer's point of view, the simplest way to do so is by using the standard output:
 
 ```cpp
 #include <iostream>
@@ -280,13 +282,13 @@ All variable above are of type `int`, integer numbers. Variables can contain num
 
 ### Numbers
 
-In real life we recognize numbers when we see them. Sometimes they confound us...
+In real life we recognize numbers when we see them. Even if sometimes they confound us...
 
 ![What is the parking lot number under the car?](images/16-06-68.png)
 
-... or we get scared when we see lot of numbers.
+Every programmer has to do deal with numbers, most of the the time with integers.
 
-
+The first exercises 
 
 Numbers is a big family with many differences. Each type has different qualities.
 There are many type of numbers. 
@@ -389,7 +391,24 @@ constants
 - name in all uppercase
 - does not change after initialization.
 
+## Using the standard library
+
+functions and classes
+
+string also with the `string(i, '*')` constructor... if it's not already in the variables part...
+
 ## Functions
+
+A function is a unit of program instructions that can be used by the program to perform a task.
+
+![](images/function.png)
+
+A function is composed by:
+
+- A return type and value: a function can return a result.
+- Arguments: values that are passed to the function in order to be processed (can be none)
+- A body: the function performs a task (if possible, one single task). Often, the task is to process some arguments and return the resulting value.
+- A name: an identifier that allows the program to _call_ the function. It should describe as good as possible what the function does.
 
 First create a new function.
 
@@ -402,6 +421,37 @@ Just one remark: it's very unusual that the `int main()` declaration says that t
 <img src="images/first-main-03.png">
 
 - https://en.cppreference.com/w/cpp/language/function
+
+<img src="images/microscope.png" width="50">
+
+A function can even call itself: this is called "recursion".
+
+While at first, recursion might seem daunting – there must be a reason for the saying "In order to understand recursion, you must first understand recursion." – it's really powerful concept.
+
+Calculating the factorial of a number (`5! = 1 * 2 * 3 * 4 * 5 = 
+
+```
+#include <iostream>
+
+int factorial(int number)
+{
+    if (number > 1) {
+        return number * factorial(number - 1);
+    } else {
+        return 1;
+    }
+}
+
+int main()
+{
+    std::cout << factorial(5) << std::endl;
+}
+```
+
+This is a very elegant solution:
+
+- The factorial of 1 is 1.
+- The factorial of any other positive integer number is the number itself multiplied by the factorial of the preceeding number.
 
 ## The C++ language and the standard library
 
@@ -418,6 +468,8 @@ As you will discover soon enough, this not the best way of "communicating" with 
 - in Settings Editor > Source formatter, set the style to "Strustrup"
 
 ## Branching: if, else and the logical operators
+
+## Lists
 
 ## Loops: while and for
 
@@ -462,8 +514,6 @@ int main()
     std::cout << get_age_group(age) << std::endl;
 }
 ```
-
-## The containers
 
 ## Reading and writing text files
 

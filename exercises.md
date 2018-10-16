@@ -57,6 +57,14 @@ int main()
 
 ## Functions
 
+## Age control in a club
+
+At the entry of a club there is a age check:
+
+- People younger than 16 cannot entry.
+- People who are exactly 18 years old have a free entry.
+- People who are younger than 18 pay 20.— and get 4 _free_ soft drinks.
+- People who are younger than 18 pay 50.— and get 4 _free_ drinks.
 
 ## Input
 
@@ -184,6 +192,95 @@ int main()
 
 ## Loops
 
+### The checksum
+
+Sum of all digits in a number: `1234` is transformed in `1 + 2 + 3 + 4 = 10`
+
+```cpp
+#include <iostream>
+
+int checksum(int number)
+{
+    int result{0};
+
+    while (number > 0) {
+        result += number %10;
+        number /= 10;
+    }
+
+    return result;
+}
+
+int main()
+{
+    std::cout << checksum(123456) << std::endl;
+}
+```
+
+What happens if you want to calculate the checksum of `123123123123`?  
+
+We can use an `unsigned int` or even an `unsigned long` as the argument for `checksum(unsigned long number)`.
+
+Is there a simple way to calculate the checksum of any integer number, ?  
+
+```cpp
+#include <iostream>
+#include <string>
+
+const int ASCII_ZERO = 48;
+
+int checksum(std::string number)
+{
+    int result{0};
+
+    for (char i: number) {
+        result += i - ASCII_ZERO;
+    }
+
+    return result;
+}
+
+int main()
+{
+    std::cout << checksum("123456") << std::endl;
+}
+```
+
+### Get the digits numbers in the right number
+
+Given the number 12345, output:
+
+```
+1
+2
+3
+4
+5
+```
+
+The simplest solution is to use the same algorithm as for the checksum and put each digit in a list, which you, then can output in the right order.
+
+There is also an elegant recursive solution:
+
+```cpp
+#include <iostream>
+
+void show_digits(int number)
+{
+    if (number > 10) {
+        show_digits(number / 10);
+    }
+    std::cout << number % 10 << std::endl;
+}
+
+int main()
+{
+    show_digits(1234);
+}
+```
+
+### Fibonacci
+
 ### Fraction calculator
 
 Write a program that:
@@ -296,16 +393,18 @@ Do you have an idea, how to improve the code, reduce its length and make it more
 #include <string>
 #include <array>
 
-void stars(int i)
+std::string get_stars(int i)
 {
-    std::cout << std::string(i, '*') << std::endl;
+    return std::string(i, '*');
 }
 
 int main()
 {
-    for (auto i: std::array<int, 5>{4, 8, 12, 8, 4}) {
-        stars(i);
-    }
+    std::cout << get_stars(4) << std::endl;
+    std::cout << get_stars(8) << std::endl;
+    std::cout << get_stars(12) << std::endl;
+    std::cout << get_stars(8) << std::endl;
+    std::cout << get_stars(4) << std::endl;
 }
 ```
 
@@ -388,6 +487,39 @@ class fraction {
 ### Fraction calculator
 
 - `std::gcd` (from C++ 17)
+
+## Loops
+
+### Get the digits numbers in the right number
+
+<!-- ```src/loops-digits.cpp``` -->
+```cpp
+#include <iostream>
+#include <vector>
+
+std::vector<int> get_digits(int number)
+{
+    std::vector<int> result{};
+    while (number > 0) {
+        result.insert(result.begin(), number % 10);
+        number /= 10;
+    }
+    return result;
+}
+
+int main()
+{
+    for (auto digit: get_digits(1234)) {
+        std::cout << digit << std::endl;
+    }
+}
+```
+
+### Fibonacci Series
+
+A Fibonacci serie is a serie of numbers in which each number is the sum of the two preceding numbers. The simplest is the series 1, 1, 2, 3, 5, 8, etc.
+
+fib(n) = fib(n-1) + fib(n-2)
 
 ## Code Style
 
