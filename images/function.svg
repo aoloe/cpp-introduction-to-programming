@@ -28,8 +28,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3927606"
-     inkscape:cx="260.73178"
+     inkscape:zoom="2.6304337"
+     inkscape:cx="295.27484"
      inkscape:cy="743.3669"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -74,19 +74,19 @@
        id="rect14"
        width="20.42211"
        height="5.9564514"
-       x="94.982185"
+       x="97.098854"
        y="95.331657" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:6.61458302px;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="117.67783"
+       x="119.79451"
        y="99.630684"
        id="text18"><tspan
          sodipodi:role="line"
          id="tspan16"
-         x="117.67783"
+         x="119.79451"
          y="99.630684"
-         style="stroke-width:0.26458332px">{</tspan></text>
+         style="stroke-width:0.26458332px">)</tspan></text>
     <text
        id="text22"
        y="146.60178"
@@ -137,11 +137,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:6.61458302px;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="94.283218"
+       x="96.399887"
        y="92.657326"
        id="text42"><tspan
          sodipodi:role="line"
-         x="94.283218"
+         x="96.399887"
          y="92.657326"
          style="font-size:4.23333311px;stroke-width:0.26458332px"
          id="tspan40">arguments</tspan></text>
@@ -167,5 +167,27 @@
          y="130.82722"
          x="43.396984"
          sodipodi:role="line">return value</tspan></text>
+    <text
+       id="text28"
+       y="99.630684"
+       x="93.585106"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:6.61458302px;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332px"
+         y="99.630684"
+         x="93.585106"
+         id="tspan26"
+         sodipodi:role="line">(</tspan></text>
+    <text
+       id="text32"
+       y="99.630684"
+       x="122.44035"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:6.61458302px;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332px"
+         y="99.630684"
+         x="122.44035"
+         id="tspan30"
+         sodipodi:role="line">{</tspan></text>
   </g>
 </svg>
