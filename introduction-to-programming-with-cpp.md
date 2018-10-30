@@ -252,14 +252,37 @@ Still, when programming, it's often a good idea to start coding what you already
 
 ## Variables, data types and operators
 
+Technically speaking, a variable is a portion of memory for storing a _value_ and identified by a _name_.
 
-Technically speaking, a variable is a portion of memory for storing a value and identified by a name.
+In order to store and retrieve the value, the variable must have a _type_ specifying _how_ the variable is stored in memory.
 
-In C++, each variable must have a name, a value and a type.
+In C++, each variable must have a name, a value and a type. The name and the type 
 
-On a more practical side, a variable is name you attach to a value. As an example if we need to do calculation with triangles we can define:
+A variable is created by defining its name and type and initializing its value:
 
 ```cpp
+int main()
+{
+    int height{4};
+}
+```
+
+Once it has been initialized you can get read the variable's value and you can assign a new value to the variable:
+
+```cpp
+int main()
+{
+    int height{4};
+    std::cout << height << std::endl;
+    height = 8;
+    std::cout << height << std::endl;
+}
+```
+
+On a more practical side, a variable is a name you attach to a value. As an example if we need to do calculation with triangles we can define:
+
+```cpp
+#include <iostream>
 int main()
 {
     int base{5};
@@ -272,13 +295,55 @@ int main()
 }
 ```
 
-Since we have picked good names, you should easily understand what's going on:
+Of course, our program could have done exactly the same in two lines of code:
+
+```cpp
+#include <iostream>
+int main()
+{
+    std::cout << 5 * 4 / 2 << std::endl;
+    std::cout << 10 * 4 / 2 << std::endl;
+}
+```
+
+As you see, picking good names, really helps understanding what a program does:
+
 - We have three variables, `base`, `height` and `area` of type `int`.
-- Each variable is initialized with a value.
-- The area is calculated as a multiplication of the base and height.
-- We double the height, and then assign a new value calculated to the `area` variable.
+- Each variable is initialized with a specific value.
+- We calculate and output the area as a multiplication of the base and height.
+- We double the height, and recalculate the `area` variable.
 
 All variable above are of type `int`, integer numbers. Variables can contain numbers, text, lists, booleans and many other types.
+
+<img src="images/microscope.png" width="50">
+
+---
+
+The variables have a well defined validity span called _scope_.
+
+As a general rule, the scope is delimited by curly braces (`{...}`). You can even add curly braces for limiting the lifetime of a variable:
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    {
+        int width{0};
+        std::cout << width << std::endl;
+    }
+    {
+        int width{8};
+        std::cout << width << std::endl;
+    }
+}
+```
+
+In the example above we have two distinct variables `width` that are defined one after the other. Of course none of them is available 
+
+As you probably have guessed, all the memory is _freed_ when the main function is finished and the program stops.
+
+---
 
 ### Numbers
 
@@ -326,9 +391,40 @@ Source: https://stackoverflow.com/a/17926277/5239250
 
 ### Text
 
+In C++, text can be 
+
+### Structs
+
+A _struct_ is a sequence of members that is initialized and used as one single item.
+
+If we want to use a `now` variable, we can define it as a compound consisting of hours, minutes and seconds, rather than defining three individual integer variables:
+
+```cpp
+struct Time
+{
+    int hours;
+    int minutes;
+    int seconds;
+};
+
+int main()
+{
+    Time now{15, 30, 24};
+    std::cout << now.hours << ":" << now.minutes << ":" << now.seconds << std::endl;
+}
+```
+
 ### Lists
 
 ### Constants
+
+
+## Good practices
+
+local and global variables. Or better: variables _live_ in the scope where they are defined. In an inner scope you see the variables in the scope surounding it.
+
+- You should not _shadow_ existing variables.
+- You give your variables the _shortest_ possible life (it's possible to define variables outside of the `int main()` function – and have them as _globals_ –  but you should avoid that.
 
 ### Naming variables
 

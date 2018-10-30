@@ -66,6 +66,19 @@ At the entry of a club there is a age check:
 - People who are younger than 18 pay 20.— and get 4 _free_ soft drinks.
 - People who are younger than 18 pay 50.— and get 4 _free_ drinks.
 
+### Small exercises
+
+- Numbers:
+    - Write a function that gets a number and returns its doubl.
+    - Write a function that gets two numbers and returns their sum.
+    - Write a function that gets one number and returns its square.
+    - Write a function that gets two numbers and returns the sum of their square.
+    - Write a function that gets a number and returns true when it is even and false otherwise.
+- Strings:
+  - Write a function that gets a character and a number n and returns a string with the character repeated n times.
+  - Write a function that gets a string and a number n and returns the first n characters.
+  - Write a function that gets a string and a number n and retunrs the last n characters
+
 ## Input
 
 ### Fractions calculator
